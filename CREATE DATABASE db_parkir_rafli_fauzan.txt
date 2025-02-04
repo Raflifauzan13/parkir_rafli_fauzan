@@ -1,0 +1,23 @@
+CREATE DATABASE db_parkir_rafli_fauzan
+CREATE TABLE parkir (
+	id_parkir INT(10) PRIMARY KEY,
+    alamat VARCHAR(100),
+    harga INT(8)
+);
+CREATE TABLE kendaraan (
+	id_kendaraan INT(6) PRIMARY KEY,
+    id_parkir INT(10),
+    jenis_kenadaraan VARCHAR(10)
+);
+INSERT INTO parkir VALUES 
+(1001,'bandung',2000),
+(1002,'surabaya',2000),
+(1003,'samarinda',2000),
+(1004,'jakarta',2000),
+(1005,'bogor',2000)
+INSERT INTO kendaraan VALUES 
+(2001,1001,'motor'),
+(3002,1002,'mobil'),
+(4003,1003,'motor'),
+(5004,1004,'motor'),
+(5005,1005,'mobil')
